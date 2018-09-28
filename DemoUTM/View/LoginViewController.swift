@@ -58,7 +58,10 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func onForgotPasswordTouched(_ sender: Any) {
-        
+        //goi man hinh quen mat khau
+        let storyboard = UIStoryboard(name: "Main", bundle: nil);
+        let vc = storyboard.instantiateViewController(withIdentifier: "FogotPasswordViewController") as! FogotPasswordViewController
+        self.present(vc, animated: true, completion: nil)
     }
     
     
